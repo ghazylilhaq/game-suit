@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suit Game</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <h1>Suit Game</h1>
+      <div class="game">
+        <div class="choices">
+          <button class="choice batu">
+            <img src="./Images/batu.png" alt="" />
+          </button>
+
+          <button class="choice gunting">
+            <img src="./Images/gunting.png" alt="" />
+          </button>
+
+          <button class="choice kertas">
+            <img src="./Images/kertas.png" alt="" />
+          </button>
+        </div>
+
+        <div class="battle">
+          <div class="versus">
+            <div class="gambar batu">
+              <img src="./Images/batu.png" alt="" />
+            </div>
+            <div class="gambar gunting">
+              <img src="./Images/gunting.png" alt="" />
+            </div>
+          </div>
+          <div class="winlose">
+            <p>choose your action!</p>
+          </div>
+        </div>
+
+        <div class="result">
+          <div class="your-result">
+            <p>Your Result</p>
+          </div>
+
+          <div class="scores">
+            <div class="win-score">
+              <p>Win :</p>
+              <p id="win-value">0</p>
+            </div>
+            <div class="lose-score">
+              <p>Lose :</p>
+              <p id="lose-value">0</p>
+            </div>
+          </div>
+
+          <button class="btn-play">Reset</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+  </body>
+</html>

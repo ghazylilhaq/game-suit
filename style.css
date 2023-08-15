@@ -1,0 +1,220 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.main {
+  display: flex;
+  width: 60%; /* Adjust relative width */
+  height: 90%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px; /* Adjust gap */
+  overflow-y: auto;
+  border-radius: 30px; /* Adjust border-radius */
+  background: #fff;
+  box-shadow: 0px 3.9272726774215705px 29.454545974731445px 0px
+    rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 43px; /* Adjust font size */
+  font-weight: 600;
+}
+
+.game {
+  display: flex;
+  padding: 0px 24px; /* Adjust padding */
+  justify-content: center;
+  align-items: center;
+  gap: 72px; /* Adjust gap */
+}
+
+.choices {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 21px; /* Adjust gap */
+  flex: 1 0 0;
+}
+
+.choices .choice {
+  display: flex;
+  width: 110px; /* Adjust dimensions */
+  height: 110px; /* Adjust dimensions */
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px; /* Adjust border-radius */
+  background: #fff;
+  box-shadow: 0px 3.9272726774215705px 29.454545974731445px 0px
+    rgba(0, 0, 0, 0.2);
+}
+
+.choices img {
+  width: 112px; /* Adjust dimensions */
+  height: 112px; /* Adjust dimensions */
+}
+
+.battle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 28.8px; /* Adjust gap */
+}
+
+.versus {
+  display: flex;
+  align-items: flex-start;
+  gap: 39px; /* Adjust gap */
+}
+
+.versus .gambar {
+  display: flex;
+  width: 134px; /* Adjust dimensions */
+  height: 134px; /* Adjust dimensions */
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px; /* Adjust border-radius */
+  background: #fff;
+  box-shadow: 0px 3.9272726774215705px 29.454545974731445px 0px
+    rgba(0, 0, 0, 0.2);
+}
+
+.versus img {
+  width: 134px; /* Adjust dimensions */
+  height: 134px; /* Adjust dimensions */
+}
+
+.winlose p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 38.4px; /* Adjust font size */
+  font-weight: 400;
+  color: #000;
+  text-align: center;
+  font-style: normal;
+  line-height: normal;
+
+  width: 307px;
+  height: 38px;
+}
+
+.result {
+  display: flex;
+  height: 364.2px; /* Adjust height */
+  padding: 28.8px 6px; /* Adjust padding */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 64.8px; /* Adjust gap */
+  flex: 1 0 0;
+  border-radius: 30px; /* Adjust border-radius */
+  background: #fff;
+  box-shadow: 0px 3.9272726774215705px 29.454545974731445px 0px
+    rgba(0, 0, 0, 0.2);
+  width: 200px;
+}
+
+.result p {
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16.8px; /* Adjust font size */
+  font-weight: 400;
+}
+
+.scores {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7.2px; /* Adjust gap */
+}
+
+.win-score,
+.lose-score {
+  display: flex;
+  align-items: center;
+  gap: 6px; /* Adjust gap */
+}
+
+.btn-play {
+  display: inline-flex;
+  padding: 10px 18px; /* Adjust padding */
+  align-items: center;
+  gap: 6px; /* Adjust gap */
+  border-radius: 12px; /* Adjust border-radius */
+  border: none;
+  background-color: white;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px; /* Adjust font size */
+  font-weight: 400;
+  cursor: pointer;
+  /* box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.btn-play:hover {
+  /* background-color: #45a049; */
+  transform: scale(1.05);
+}
+
+.btn-play:active {
+  /* background-color: #3e8e41; */
+  transform: scale(0.95);
+}
+
+.btn-play span {
+  display: inline-block;
+  transform-origin: center;
+  transition: transform 0.1s ease;
+}
+
+.btn-play.clicked span {
+  animation: clickAnimation 0.2s ease;
+}
+
+@keyframes clickAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.choices button {
+  font-size: 18px;
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.choices button:hover {
+  background-color: #a6d9e6;
+  transform: scale(1.05);
+}
+
+.choices button:active {
+  background-color: #47bcda;
+  transform: scale(0.95);
+}
+
+.hidden {
+  display: none;
+}
