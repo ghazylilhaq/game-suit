@@ -1,1 +1,1 @@
-# game-suit-ver1
+# game-suit
