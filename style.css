@@ -1,32 +1,38 @@
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+* {
+  font-family: "Montserrat", sans-serif;
   margin: 0;
-  background-color: #f0f0f0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(
+    0deg,
+    rgba(5, 191, 219, 1) 15%,
+    rgba(9, 99, 122, 1) 63%,
+    rgba(10, 77, 104, 1) 96%
+  );
+  padding: 10px;
 }
 
 .main {
-  display: flex;
-  width: 60%; /* Adjust relative width */
-  height: 90%;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 32px; /* Adjust gap */
-  overflow-y: auto;
-  border-radius: 30px; /* Adjust border-radius */
-  background: #fff;
-  box-shadow: 0px 3.9272726774215705px 29.454545974731445px 0px
-    rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 840px;
+  background: aliceblue;
+  margin: 20px auto 20px;
+  padding: 40px 30px;
+  border-radius: 10px;
 }
 
 h1 {
   color: #000;
-  font-family: "Montserrat", sans-serif;
   font-size: 43px; /* Adjust font size */
   font-weight: 600;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  justify-content: center;
 }
 
 .game {
@@ -43,7 +49,7 @@ h1 {
   justify-content: center;
   align-items: center;
   gap: 21px; /* Adjust gap */
-  flex: 1 0 0;
+  flex: 1;
 }
 
 .choices .choice {
@@ -69,6 +75,7 @@ h1 {
   justify-content: center;
   align-items: center;
   gap: 28.8px; /* Adjust gap */
+  flex: 2;
 }
 
 .versus {
@@ -121,6 +128,7 @@ h1 {
   box-shadow: 0px 3.9272726774215705px 29.454545974731445px 0px
     rgba(0, 0, 0, 0.2);
   width: 200px;
+  flex: 1;
 }
 
 .result p {
@@ -217,4 +225,34 @@ h1 {
 
 .hidden {
   display: none;
+}
+
+@media (max-width: 840px), screen and (orientation: portrait) {
+  .game {
+    flex-direction: column;
+  }
+
+  .choices {
+    flex-direction: row;
+  }
+
+  .result {
+    height: 364.2px; /* Adjust height */
+
+    gap: 10px; /* Adjust gap */
+
+    width: 100%;
+
+    margin-top: 20px;
+  }
+
+  .choices .choice {
+    width: 80px; /* Adjust dimensions */
+    height: 80px; /* Adjust dimensions */
+  }
+
+  .choices img {
+    width: 80px; /* Adjust dimensions */
+    height: 80px; /* Adjust dimensions */
+  }
 }
